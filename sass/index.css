@@ -49,7 +49,7 @@ body main .card {
   border: none solid black;
   margin: px;
 }
-body main ul.list {
+body main .list {
   list-style-type: none;
   margin: 0;
   padding: 0;
