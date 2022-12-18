@@ -5,13 +5,24 @@ body{
     @include flex(column, center, center);
     height: 100vh;
     width: 100%;
+    background-color: rgb(195, 247, 229);
     header{
         @include flex(column, center, center);
         span{
             @include flex(row, center, center);
         }
     }
-    main{
+    main {
         @include flex(row, center, center);
-    }
+        .card {
+            border: none solid black;
+            margin: 15px;
+        }
+        ul.list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+}
 }
