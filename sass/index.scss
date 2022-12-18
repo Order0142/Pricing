@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import './partials/reset';
 @import './partials/mixin';
 
@@ -10,6 +11,18 @@ body{
         @include flex(column, center, center);
         span{
             @include flex(row, center, center);
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2em;
+            margin-top: -25vh;
+            margin-bottom: 5vh;
+        }
+        i{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            padding: 10px 15px;
         }
     }
     main {
