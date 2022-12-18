@@ -36,6 +36,7 @@ body header h2 {
 body header i {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  font-size: 1.3em;
   padding: 10px 15px;
 }
 body main {
@@ -54,14 +55,18 @@ body main ul.list {
   padding: 0;
 }
 body main section {
-  padding: 10vh 5vw;
+  padding: 0vh 0vw;
   font-size: larger;
   line-height: 1.8;
   border-radius: 15px;
+  text-align: center;
 }
 body main .active {
   background-color: white;
 }
 body main .active1 {
   background-image: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+}
+body main h4 {
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=index.css.map */
