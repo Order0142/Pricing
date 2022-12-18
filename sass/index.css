@@ -33,7 +33,7 @@ body main {
 }
 body main .card {
   border: none solid black;
-  margin: 15px;
+  margin: px;
 }
 body main ul.list {
   list-style-type: none;
@@ -44,8 +44,11 @@ body main section {
   padding: 10vh 5vw;
   font-size: larger;
   line-height: 1.8;
+  border-radius: 15px;
 }
 body main .active {
   background-color: white;
-  border-radius: 8px;
+}
+body main .active1 {
+  background-image: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
 }/*# sourceMappingURL=index.css.map */
