@@ -48,7 +48,13 @@ body main {
 }
 body main .card {
   border: none solid black;
-  margin: px;
+  margin: 10px;
+}
+body main .card:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.8s ease;
 }
 body main .list {
   padding: 10px;
@@ -79,16 +85,12 @@ body main .active1 a {
 body main section {
   padding: 4vh 3vw;
   font-size: larger;
-  line-height: 1.8;
   border-radius: 15px;
   text-align: center;
   line-height: 2;
 }
 body main .active {
   background-color: white;
-}
-body main .active1 {
-  background-image: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
 }
 body main h4 {
   color: rgb(65, 58, 58);

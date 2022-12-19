@@ -32,7 +32,17 @@ body {
     @include flex(row, center, center);
     .card {
       border: none solid black;
-      margin: px;
+      margin: 10px;
+      &:hover {
+        transform: scale(1.1);
+        background-image: linear-gradient(
+          to right,
+          hsl(236, 72%, 79%),
+          hsl(237, 63%, 64%)
+        );
+        box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
+        transition: all 0.8s ease;
+      }
     }
     .list {
       padding: 10px;
@@ -67,7 +77,6 @@ body {
     section {
       padding: 4vh 3vw;
       font-size: larger;
-      line-height: 1.8;
       border-radius: 15px;
       text-align: center;
       line-height: 2;
@@ -75,13 +84,7 @@ body {
     .active {
       background-color: white;
     }
-    .active1 {
-      background-image: linear-gradient(
-        to right,
-        hsl(236, 72%, 79%),
-        hsl(237, 63%, 64%)
-      );
-    }
+
     h4 {
       color: rgb(65, 58, 58);
     }
