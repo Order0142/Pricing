@@ -12,7 +12,10 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-color: rgb(195, 247, 229);
+  background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-position: right top, left bottom;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
 }
 body header {
   display: flex;
@@ -27,7 +30,6 @@ body header span {
   align-items: center;
 }
 body header h2 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
   margin-top: -10vh;
@@ -78,7 +80,7 @@ body main .active1 a {
   background-image: white;
 }
 body main section {
-  padding: 5vh 3vw;
+  padding: 4vh 3vw;
   margin: 5px;
   font-size: larger;
   line-height: 1.8;

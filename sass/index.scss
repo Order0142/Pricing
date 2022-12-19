@@ -1,89 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import './partials/reset';
-@import './partials/mixin';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import "./partials/reset";
+@import "./partials/mixin";
 
-body{
+body {
+  @include flex(column, center, center);
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-position: right top, left bottom;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+
+  header {
     @include flex(column, center, center);
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(195, 247, 229);
-    header{
-        @include flex(column, center, center);
-        span{
-            @include flex(row, center, center);
-        }
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 2em;
-            margin-top: -10vh;
-            margin-bottom: 3vh;
-        }
-        i{
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            font-size: 1.3em;
-            padding: 10px 15px;
-        }
+    span {
+      @include flex(row, center, center);
     }
-    main {
-        @include flex(row, center, center);
-        .card {
-            border: none solid black;
-            margin: px;
-        }
-        .list {
-            font-family: 'Montserrat', sans-serif;
-            padding: 10px;
-        }
-        p{
-            padding: 5px 25px;
-            border-bottom: 1px solid rgb(209, 204, 204);
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: rgb(75, 68, 68);
-
-        }
-        a{
-            text-decoration: none;
-            background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%) );       
-            padding: 10px 60px;
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.8em;
-            font-weight: bold;
-            border-radius: 5px;
-
-        }
-        a:hover{
-            background-color: white;
-            color: rgb(81, 81, 173);
-        }
-        .active1 a{
-            background-image: white;
-        }
-        section {
-            padding: 5vh 3vw;
-            margin: 5px;
-            font-size: larger;
-            line-height: 1.8;
-            border-radius: 15px;
-            text-align: center;
-            line-height: 2;
-        }
-        .active{
-            background-color: white;
-        }
-        .active1{
-            background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%) );
-        }
-        h4{
-            font-family: 'Montserrat', sans-serif;
-            color: rgb(65, 58, 58);
-        }
-        b {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.5em;
-        }
-}
+    h2 {
+      font-weight: 700;
+      font-size: 2em;
+      margin-top: -10vh;
+      margin-bottom: 3vh;
+    }
+    i {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 1.3em;
+      padding: 10px 15px;
+    }
+  }
+  main {
+    @include flex(row, center, center);
+    .card {
+      border: none solid black;
+      margin: px;
+    }
+    .list {
+      font-family: "Montserrat", sans-serif;
+      padding: 10px;
+    }
+    p {
+      padding: 5px 25px;
+      border-bottom: 1px solid rgb(209, 204, 204);
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: rgb(75, 68, 68);
+    }
+    a {
+      text-decoration: none;
+      background-image: linear-gradient(
+        to right,
+        hsl(236, 72%, 79%),
+        hsl(237, 63%, 64%)
+      );
+      padding: 10px 60px;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.8em;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    a:hover {
+      background-color: white;
+      color: rgb(81, 81, 173);
+    }
+    .active1 a {
+      background-image: white;
+    }
+    section {
+      padding: 4vh 3vw;
+      margin: 5px;
+      font-size: larger;
+      line-height: 1.8;
+      border-radius: 15px;
+      text-align: center;
+      line-height: 2;
+    }
+    .active {
+      background-color: white;
+    }
+    .active1 {
+      background-image: linear-gradient(
+        to right,
+        hsl(236, 72%, 79%),
+        hsl(237, 63%, 64%)
+      );
+    }
+    h4 {
+      font-family: "Montserrat", sans-serif;
+      color: rgb(65, 58, 58);
+    }
+    b {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5em;
+    }
+  }
 }
